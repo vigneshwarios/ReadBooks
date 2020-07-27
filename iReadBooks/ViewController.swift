@@ -47,7 +47,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.imageView?.image = UIImage(data: read.image as! Data)
         return cell
     }
-
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let iReadBooks = readBooks[indexPath.row]
+        performSegue(withIdentifier: "readBooksSegue", sender: iReadBooks)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! ReadBooksViewController
+        nextVC.iAlreadyReadBooks = sender as? ReadBooks
+    }
 }
 

@@ -13,7 +13,6 @@
 		2F45BD1024BF89B80090BB77 /* iReadBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F45BD0E24BF89B80090BB77 /* iReadBooks.xcdatamodeld */; };
 		2F45BD1224BF89B80090BB77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F45BD1124BF89B80090BB77 /* Assets.xcassets */; };
 		2F45BD1524BF89B80090BB77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F45BD1324BF89B80090BB77 /* LaunchScreen.storyboard */; };
-		2F45BD1D24BFA51B0090BB77 /* Screen Shot 2020-07-15 at 1.54.55 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F45BD1C24BFA51B0090BB77 /* Screen Shot 2020-07-15 at 1.54.55 PM.png */; };
 		2F45BD1F24BFA7FC0090BB77 /* ReadBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45BD1E24BFA7FC0090BB77 /* ReadBooksViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		2F45BD1124BF89B80090BB77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F45BD1424BF89B80090BB77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F45BD1624BF89B80090BB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F45BD1C24BFA51B0090BB77 /* Screen Shot 2020-07-15 at 1.54.55 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-07-15 at 1.54.55 PM.png"; sourceTree = "<group>"; };
 		2F45BD1E24BFA7FC0090BB77 /* ReadBooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadBooksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				2F45BD0724BF89B80090BB77 /* AppDelegate.swift */,
-				2F45BD1C24BFA51B0090BB77 /* Screen Shot 2020-07-15 at 1.54.55 PM.png */,
 				2F45BD0924BF89B80090BB77 /* ViewController.swift */,
 				2F45BD1E24BFA7FC0090BB77 /* ReadBooksViewController.swift */,
 				2F45BD0B24BF89B80090BB77 /* Main.storyboard */,
@@ -134,7 +131,6 @@
 			files = (
 				2F45BD1524BF89B80090BB77 /* LaunchScreen.storyboard in Resources */,
 				2F45BD1224BF89B80090BB77 /* Assets.xcassets in Resources */,
-				2F45BD1D24BFA51B0090BB77 /* Screen Shot 2020-07-15 at 1.54.55 PM.png in Resources */,
 				2F45BD0D24BF89B80090BB77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +307,7 @@
 				2F45BD1B24BF89B80090BB77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -34,7 +34,7 @@
                     <navigationItem key="navigationItem" id="8n6-9j-nGw">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nuv-3t-TAy">
                             <connections>
-                                <segue destination="4cZ-tC-Tzh" kind="show" id="JNf-FP-t4O"/>
+                                <segue destination="4cZ-tC-Tzh" kind="show" identifier="readBooksSegue" id="JNf-FP-t4O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -75,13 +75,22 @@
                                     <action selector="readBooksAddButton:" destination="4cZ-tC-Tzh" eventType="touchUpInside" id="O0V-le-ejY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSn-70-4eJ">
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="4cZ-tC-Tzh" eventType="touchUpInside" id="hdV-Wg-GIy"/>
+                                    <action selector="readBooksAddButton:" destination="4cZ-tC-Tzh" eventType="touchUpInside" id="CBr-oj-axJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ATF-JJ-ao0" firstAttribute="top" secondItem="YtZ-z5-4Zb" secondAttribute="bottom" constant="20" id="36r-5G-klT"/>
                             <constraint firstItem="ATF-JJ-ao0" firstAttribute="width" secondItem="YtZ-z5-4Zb" secondAttribute="width" id="8KI-xu-QZm"/>
+                            <constraint firstItem="RSn-70-4eJ" firstAttribute="centerX" secondItem="CMN-Ld-dvO" secondAttribute="centerX" id="8mI-5d-vVj"/>
                             <constraint firstItem="YtZ-z5-4Zb" firstAttribute="top" secondItem="Ul1-ac-Is3" secondAttribute="bottom" constant="20" id="SDW-ru-3Dx"/>
                             <constraint firstItem="YtZ-z5-4Zb" firstAttribute="centerX" secondItem="CMN-Ld-dvO" secondAttribute="centerX" id="bbM-Ia-aRm"/>
+                            <constraint firstItem="RSn-70-4eJ" firstAttribute="top" secondItem="ZLm-PE-JzX" secondAttribute="bottom" constant="20" id="ej4-IS-efu"/>
                             <constraint firstItem="ZLm-PE-JzX" firstAttribute="centerX" secondItem="CMN-Ld-dvO" secondAttribute="centerX" id="fSx-pV-uge"/>
                             <constraint firstItem="ATF-JJ-ao0" firstAttribute="centerX" secondItem="CMN-Ld-dvO" secondAttribute="centerX" id="mfF-z5-vqx"/>
                             <constraint firstItem="ZLm-PE-JzX" firstAttribute="centerX" secondItem="CMN-Ld-dvO" secondAttribute="centerX" id="r7e-Mg-Pgi"/>
@@ -103,13 +112,15 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="ZLm-PE-JzX" id="4ps-8H-fwm"/>
+                        <outlet property="deleteButton" destination="RSn-70-4eJ" id="RxI-cu-qMr"/>
                         <outlet property="readBookImageView" destination="YtZ-z5-4Zb" id="QPk-pK-8Rj"/>
                         <outlet property="readBookTitle" destination="ATF-JJ-ao0" id="ATX-7o-VZ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JTD-Fh-Bet" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="45"/>
+            <point key="canvasLocation" x="968.79999999999995" y="44.527736131934034"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GuN-Co-pFQ">
